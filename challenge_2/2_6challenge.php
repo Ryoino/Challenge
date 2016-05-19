@@ -14,4 +14,4 @@ while($division >= 100){
 }
 ?>
 </body>
-<html>
+</html>

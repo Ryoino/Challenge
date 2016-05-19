@@ -2,10 +2,10 @@
 <html>
 <head>
 <meta charset="utf8" />
-<title>課題2_1</title>
+<title>課題2_1/title>
 </head>
 <body>
-<h1>課題2_1</h1>
+  <h1>課題2_1</h1>
   <?php
   $value = 2;
   switch ($value ) {
@@ -17,8 +17,8 @@
         break;
     default:
         echo '想定外';
-      break;
+    break;
   }
-   ?>
+  ?>
 </body>
-<html>
+</html>

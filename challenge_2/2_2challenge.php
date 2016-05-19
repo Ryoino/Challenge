@@ -8,7 +8,6 @@
 <h1>課題2_2</h1>
 <?php
 $lang = 'あ';
-
 switch ($lang) {
   case 'A':
     echo '英語';
@@ -18,7 +17,5 @@ switch ($lang) {
       break;
 }
 ?>
-
-
 </body>
-<html>
+</html>
