@@ -9,9 +9,11 @@
 
 <?php
 $count = 0;
+$count1 =1;
 for ($i=0; $i <100 ; $i++) {
-  $count = $count + 1;
+$count  =  $count + $count1 ;
   echo $count.'<br>';
+  $count1++;
 }
 ?>
 </body>
