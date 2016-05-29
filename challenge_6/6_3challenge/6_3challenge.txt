@@ -1,0 +1,2 @@
+---課題3---
+mysql> select * from profiles where name = '高橋 清';

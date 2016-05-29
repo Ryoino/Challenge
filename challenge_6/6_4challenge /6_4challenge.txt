@@ -1,0 +1,2 @@
+---課題4---
+mysql> select * from profiles where age = 24;

@@ -1,0 +1,2 @@
+---課題2---
+mysql> mysql> select * from profiles where profilesID = 3;

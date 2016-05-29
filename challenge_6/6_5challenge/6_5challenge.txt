@@ -1,0 +1,2 @@
+---課題6---
+mysql> select * from profiles where age >= 25;

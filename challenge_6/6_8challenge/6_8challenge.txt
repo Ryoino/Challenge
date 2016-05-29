@@ -1,0 +1,4 @@
+---課題8---
+mysql> delete from profiles where birthday = '2000-12-24';
+
+mysql> select * from prfiles;

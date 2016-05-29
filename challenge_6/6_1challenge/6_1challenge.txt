@@ -1,0 +1,15 @@
+——-課題1---
+mysql> insert into profiles
+    -> values(1,'田中実','012-345-6789',30,'1994-02-01');
+    
+mysql> insert into profiles
+    -> values(2,'鈴木茂','090-1122-3344',37,'1987-08-12'); 
+    
+mysql> insert into profiles
+    -> values(3,'鈴木実','080-5566-7788',24,'2000-12-24');
+    
+mysql> insert into profiles
+    -> values(4,'佐藤清','012-0987-6543',19,'2005-08-01');
+    
+mysql> insert into profiles
+    -> values(5,'高橋清','090-9900-1234',24,'2000-12-24');
