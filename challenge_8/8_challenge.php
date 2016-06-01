@@ -17,18 +17,22 @@ class human {
 
 $inoue = new human();
 $inoue->birth('井上',25);
-
 ?>
 
 <?php
 //課題8_4
 class teacher extends human{
-  public function birth(){
-        $this -> name = null;
-        $this -> age =null;
+  public function birth($n,$a){
+        $this -> name = $n;
+        $this -> age = $a;
   }
-}
- ?>
+ public function name(){
+   return $this->name;
+  }
+ }
+$ryota = new teacher();
+$ryota ->birth(null,null)
+?>
 
 <!doctype html>
 <html>
@@ -41,6 +45,9 @@ class teacher extends human{
 
 <h1>課題8_3</h1>
 <p><?php echo $inoue->name(); ?></p>
+
+<h1>課題8_4</h1>
+<p><?php echo $ryota->name(); ?></p>
 
 </body>
 
