@@ -1,0 +1,50 @@
+
+.content{
+  margin-top:100px;
+}
+
+.Description{
+  text-decoration: none;
+  color: #000000;
+}
+
+h4{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+{
+  position: absolute;
+}
+
+div.Item{
+  clear: both;
+}
+p.img{
+  margin: 10px;
+}
+div.description{
+  float: right;
+}
+
+h1#main_logo a{
+  text-decoration: none;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #337ab7;
+  padding: 3px;
+  font-weight:
+}
+.search{
+  color: #687B81;
+  height: 30px;
+
+}
+#button{
+  background-color: #687B81;
+}
+
+.login{
+  float: right;
+  margin-top: 20px;
+  font-size: 15px;
+}
