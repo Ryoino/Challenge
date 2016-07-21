@@ -22,6 +22,11 @@ if(is_numeric($pushed)){
 
 }else{
     if($pushed == "C"){
+        $operator = null;
+        $num = null;
+        $answer = null;
+        $log.="クリア<br>";
+        $output = 0;
 
 
 
@@ -48,6 +53,8 @@ if(is_numeric($pushed)){
             } else {
                 $answer = "error";
             }
+          }elseif($operator == ".") {
+              $answer = $answer.$operator.$num;
         }else {
             //計算記号の事前入力なしに「=」や「税込み」などが押された際はここ
             $answer = (int)$num;
@@ -58,16 +65,21 @@ if(is_numeric($pushed)){
             $log .=  $operator . $num . "＝" . $answer . "<br>";
         }
         if($pushed == "税込み"){
-
+          $answer = $answer * 1.08;
+          $log .=  "税込み" . $answer . "<br>";
         }
         if($pushed == "税抜き"){
             $answer = $answer / 1.08;
             $log .=  "税抜き" . $answer . "<br>";
         }
+        if ($pushed == "%"){
+          $answer = $answer * 0.01;
+          $log .= $answer."<br>";
+        }
 
 
         //数字ボタン入力の後にこれらの文字ボタンが押されたなら、
-        if($pushed == "＋" || $pushed == "－" || $pushed == "×" || $pushed == "÷" ){
+        if($pushed == "＋" || $pushed == "－" || $pushed == "×" || $pushed == "÷" || $pushed == "."){
             $operator 	=   $pushed;//押されたボタンの記号を保持。これによりもう一度計算記号が出現したときに計算が実行できる
             $output 	=   $answer.$pushed;
             $num 	=   null;
@@ -77,8 +89,8 @@ if(is_numeric($pushed)){
             $num        =   $answer;
         }
 
-    }else {
-        $output 	=   $answer.$operator;
+      }else {
+        $output = $answer.$operator;
         $log .= "数値を入力してください<br>";
     }
 }
