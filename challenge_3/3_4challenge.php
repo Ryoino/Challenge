@@ -16,7 +16,6 @@
        $name         = '井上良太';
        $birthdate   = '1990年9月12日';
        $hobby      = 'フットサル、読書、映画、料理';
-       echo $name,$birthdate,$profile;
        return true;
      }
      $profile = my_profile();

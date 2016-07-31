@@ -16,6 +16,7 @@
     else {
       echo $num."は偶数です";
     }
+  }
    view_profile(7);
    ?>
 </body>
